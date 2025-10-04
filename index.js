@@ -1,5 +1,7 @@
 export default {
   async fetch(request, env, ctx) {
-    return new Response("ヽ༼ຈل͜ຈ༽ﾉ / hurrah! / ヽ༼ຈل͜ຈ༽ﾉ", { status: 200 });
+    const msg = "ヽ༼ຈل͜ຈ༽ﾉ / hurrah! / ヽ༼ຈل͜ຈ༽ﾉ";
+    console.log(msg);
+    return new Response(msg, { status: 200 });
   },
 };
