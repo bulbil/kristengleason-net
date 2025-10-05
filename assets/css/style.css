@@ -1,9 +1,90 @@
+@font-face {
+  font-family: "Shine Typewriter";
+  src: url("/assets/font/ShineTypewriter.ttf") format("truetype");
+}
+
+:root {
+  --color--text: black;
+  font-size: 14px;
+}
+
+body {
+  font-family: Shine Typewriter, Arial;
+  font-size: 2rem;
+}
+
+a {
+  color: var(--color--text);
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid transparent;
+  transition: color 250ms ease-out, border-color 150ms ease-in;
+}
+
+a:hover {
+  color: gray;
+  border-color: lightgray;
+}
+
+#container {
+  min-height: calc(100vw - 68rem);
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
 section {
-    max-width: 33%;
-    outline: 1px solid magenta; outline-offset: -1px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    padding: 1em;
-    text-align: center;
+  z-index: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+section:nth-of-type(2) ul {
+  display: contents;
+  list-style-type: none;
+}
+section:nth-of-type(2) li {
+  padding-bottom: 1.5rem;
+}
+
+.border {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.border:last-of-type {
+  padding-top: 5rem;
+}
+
+img {
+  filter: contrast(1.2);
+}
+
+.knot-foxes {
+  border-bottom: 1px solid black;
+}
+
+.border img:nth-of-type(1) {
+  max-height: 5rem;
+}
+
+.border img:nth-of-type(2) {
+  max-height: 5rem;
+  transform: rotate(1deg);
+}
+
+.knot-foxes {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.knot-foxes img:nth-of-type(1) {
+  height: 5rem;
+  width: 100%;
+}
+
+.knot-foxes img:nth-of-type(2) {
+  max-height: 2rem;
+  width: 100%;
 }
