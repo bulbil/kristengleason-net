@@ -24,7 +24,3 @@ jobs:
           wranglerVersion: "4.42.0"
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          preCommands: |
-            echo "** preck **"
-            pwd
-            ls .
