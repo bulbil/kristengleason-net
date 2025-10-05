@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
+
+{% include "head.html" %}
+
 <body>
 
-    <section>
-    {% for card in collections.content %}
-        {{ card.content }}
-    {% endfor %}
-    </section>
-
+    <div class="border">
+        <img src="/assets/img/missal-balkan-egg-pattern-3.png">
+        <img src="/assets/img/missal-balkan-egg-pattern-4.png">
+    </div>
+    <div class="knot-foxes">
+        <img src="/assets/img/missal-knot-foxes.png">
+        <img src="/assets/img/missal-border-1.png">
+    </div>
+    <div id="container">
+        {% for card in collections.content %}
+        <section>
+            {{ card.content }}
+        </section>
+        {% endfor %}
+    </div>
+    <div class="border">
+        <img src="/assets/img/missal-balkan-egg-pattern-2.png">
+        <img src="/assets/img/missal-balkan-egg-pattern-1.png">
+    </div>
 </body>
+
 </html>
