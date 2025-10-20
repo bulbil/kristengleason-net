@@ -4,26 +4,19 @@
 {% include "head.html" %}
 
 <body>
-
-    <div class="border">
-        <img src="/assets/img/missal-balkan-egg-pattern-3.png">
-        <img src="/assets/img/missal-balkan-egg-pattern-4.png">
-    </div>
-    <div class="knot-foxes">
-        <img src="/assets/img/missal-knot-foxes.png">
-        <img src="/assets/img/missal-border-1.png">
-    </div>
+    {% include "border.html" class: "double" src: "/assets/img/stavchany-stone-idol.jpg" %}
     <div id="container">
         {% for card in collections.content %}
         <section>
-            {{ card.content }}
+        {{ card.content }}
         </section>
+        {% include "border.html" class: "content" src: card.data.border_img %}
         {% endfor %}
-    </div>
-    <div class="border">
-        <img src="/assets/img/missal-balkan-egg-pattern-2.png">
-        <img src="/assets/img/missal-balkan-egg-pattern-1.png">
-    </div>
+        <section>
+        {% include "contact.html" %}
+        </section>
+        </div>
+    {% include "border.html" class: "double" src: "/assets/img/night.jpg" %}
 </body>
 
 </html>
