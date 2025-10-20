@@ -62,7 +62,7 @@ a {
   text-decoration: none;
   padding-bottom: 0.5rem;
   border-bottom: 3px double transparent;
-  transition: color 250ms ease-out, border-color 150ms ease-in;
+  transition: color 250ms ease-in, border-color 300ms ease-in;
 }
 
 a:hover,
