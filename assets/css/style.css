@@ -43,7 +43,18 @@ html {
 body {
   background-color: white;
   font-family: var(--font--base), Arial;
+  font-variant-ligatures: common-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.02rem;
+  line-height: 1.35;
   font-size: 2rem;
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 a {
