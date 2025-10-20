@@ -1,0 +1,8 @@
+{% if src %}
+<div class="border {{ class }}">
+    <img src="{{ src }}" alt="{{ alt }}" />
+    {% if class == "double" %}
+    <img src="{{ src }}" alt="{{ alt }}" />
+    {% endif %}
+</div>
+{% endif %}
