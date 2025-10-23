@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="--color--contrast:{{ site.contrast-color }};">
 
 {% include "head.html" %}
 
 <noscript><style>body {opacity: 1}</style></noscript>
 <body>
-    {% include "border.html" class: "double" src: "/assets/img/stavchany-stone-idol.jpg" %}
+    {% include "border.html" class: "top" img: "/assets/img/balkan-egg-designs-1.jpg,/assets/img/balkan-egg-designs-2.jpg" %}
+    {% include "border.html" class: "double" img: "/assets/img/stavchany-stone-idol.jpg" %}
     <div id="container">
         {% for card in collections.content %}
         <section>
         {{ card.content }}
         </section>
-        {% include "border.html" class: "content" src: card.data.border_img %}
+        {% include "border.html" class: "content" img: card.data.border_img %}
         {% endfor %}
-        <section>
-        {% include "contact.html" %}
-        </section>
         </div>
-    {% include "border.html" class: "double" src: "/assets/img/night.jpg" %}
+    {% include "border.html" class: "double" img: "/assets/img/night.jpg" %}
 </body>
 
 <script>
