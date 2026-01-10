@@ -3,4 +3,4 @@ date: 2025-09-14
 border_img: /assets/img/balkan-egg-designs-4.jpg
 ---
 
-Kristen Gleason is a writer in Athens, Georgia, where she lives with Lo and Mir. She is nice and good and very smart and quite fetching and not at all a  trash-type. Her upcoming short story collection from Fonograf Editions is unflinchingly and exclusively about the Twin Towers and not about anything else. Her work has appeared in *Poo Weekly*, *Poo-lar Explorations of the Royal Geographical Society*, *Washington Poo-st*, *N + Poo* and elsewhere. No, not even a horse not never.
+Kristen Gleason is the author of the short story collection *The Wallet and Other Thefts*, forthcoming from Fonograf Editions in May 2026. Her fiction appears in *McSweeney's*, *Los Angeles Review of Books*, *Boston Review*, and elsewhere. Her story "Mumbai" won *BOMB*'s Biannual Fiction Contest, and her story "The Refugee" was the North American winner of *The White Review* Short Story Prize. She has been a Writing Fellow at *A Public Space* and the recipient of a Fulbright Fellowship to northern Norway. She lives in Athens, Georgia. 
