@@ -5,7 +5,8 @@
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
-		"start": "wrangler dev"
+		"start": "wrangler dev",
+		"serve": "npx eleventy --serve"
 	},
 	"devDependencies": {
 		"markdown-it": "^14.1.0",

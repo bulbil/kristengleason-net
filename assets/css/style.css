@@ -28,7 +28,7 @@
   font-size: 18px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1080px) {
   :root {
     font-size: 14px;
   }
@@ -36,7 +36,9 @@
 
 /** typography **/
 html {
-  background-color: var(--color--contrast)
+  background-color: var(--color--contrast);
+  overscroll-behavior-x: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -59,9 +61,9 @@ body.loaded {
 a {
   color: var(--color--text);
   text-decoration: none;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px double transparent;
-  transition: color 250ms ease-in, border-color 300ms ease-in;
+  padding-bottom: 0.25rem;
+  border-bottom: 1.5px solid transparent;
+  transition: color 250ms ease-in-out, border-color 200ms ease-in-out;
 }
 
 a:hover,
@@ -121,7 +123,6 @@ section:nth-of-type(2) li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
@@ -141,12 +142,17 @@ section:nth-of-type(2) li {
 
 .border--top {
   justify-content: space-between;
+  max-width: 1440px;
   height: 5rem;
-  margin-top: unset;
+  margin: 0 auto;
+
+  > div {
+    padding: 0 2px;
+  }
 }
 
-.border--top div:last-child img {
-  transform: rotate(1.5deg);
+.border--top div img {
+  transform: rotate(1deg);
 }
 
 .border--double img:nth-of-type(2) {
